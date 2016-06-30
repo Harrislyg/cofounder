@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:notice] = "Welcome to Cofounder.com"
+      flash[:success] = "Welcome to Cofounder.com"
       redirect_to user_path(@user)
     else
       render 'new'
@@ -30,12 +30,19 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      flash[:notice] = "Your account was updated successfully"
+      flash[:success] = "Your account was updated successfully"
       redirect_to users_path
     else
       render 'edit'
     end
 
+  end
+
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+      flash[:danger] = "User has been deleted"
+    redirect_to users_path
   end
 
 

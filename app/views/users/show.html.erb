@@ -1,0 +1,24 @@
+<div class="jumbotron well">
+    <div class="container">
+        <!-- <h3 align="center"><%= @user.name %></h3> -->
+
+        <div class="row center well" id="welltitle">
+            <h4 style="color: #fff">
+                <%= @user.name %></h4>
+        </div>
+        <hr class="separator">
+
+        <div class="col-xs-2 col-sm-2">Profile picture</div>
+        <div class="col-xs-10 col-sm-10" id="userwrapper">
+            <div class="col-xs-12 col-sm-12" id="userdetails">I am a:
+                <%= @user.role %></div>
+            <div class="col-xs-12 col-sm-12" id="userdetails">Looking for a:
+                <%= @user.looking %></div>
+            <div class="col-xs-12 col-sm-12" id="userdetails">To be my:
+                <%= @user.partnerrole %></div>
+        </div>
+
+    </div>
+</div>
+
+<%= render 'users/profile', obj: @user %>

@@ -1,0 +1,20 @@
+<div class="jumbotron well">
+    <div class="container">
+        <div class="row center well" id="well">
+            <h4 style="color: #fff">About
+                <%= @user.name %></h4>
+        </div>
+        <hr class="separator">
+        <%= simple_format(@user.aboutfounder) %>
+    </div>
+    <div class="clearfix"></div>
+    <br><br>
+    <div class="container">
+        <div class="row center well" id="well">
+            <h4 style="color: #fff">Business</h4>
+        </div>
+        <hr class="separator">
+        <%= simple_format(@user.aboutbusiness) %>
+    </div>
+
+</div>
