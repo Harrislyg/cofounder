@@ -1,4 +1,9 @@
 class User < ActiveRecord::Base
+  acts_as_follower
+  acts_as_followable
+  acts_as_liker
+  acts_as_likeable
+  acts_as_mentionable
   has_many :user_categories
   has_many :categories, through: :user_categories
   before_save { self.email = email.downcase }

@@ -8,7 +8,9 @@
         </div>
         <hr class="separator">
 
-        <div class="col-xs-2 col-sm-2">Profile picture</div>
+        <div class="col-xs-2 col-sm-2">
+          <%= gravatar_for @user, size: 110 %>
+        </div>
         <div class="col-xs-10 col-sm-10" id="userwrapper">
             <div class="col-xs-12 col-sm-12" id="userdetails">I am a:
                 <%= @user.role %></div>

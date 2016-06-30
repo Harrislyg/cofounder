@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:edit, :update, :show, :destroy]
+  before_action :set_user, only: [:edit, :update, :show, :destroy, :likes]
   before_action :require_admin, only: [:destroy]
   before_action :require_same_user, only: [:edit, :update, :destroy]
 
@@ -43,6 +43,11 @@ class UsersController < ApplicationController
       @user.destroy
       flash[:danger] = "User has been deleted"
       redirect_to users_path
+  end
+
+  def likes
+    current_user.like!(@user)
+    redirect_to :back, notice: "Liked this profile successfully!"
   end
 
 
