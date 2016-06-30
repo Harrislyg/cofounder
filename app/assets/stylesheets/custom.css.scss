@@ -36,7 +36,9 @@ $navbar-default-bg: #7566CE;
   letter-spacing: -1px;
   font-weight: bold;
 }
-
+.well {
+  background-color: transparent;
+}
 #well {
   background-color: #7566CE;
   width: 150px;
@@ -70,4 +72,20 @@ $navbar-default-bg: #7566CE;
 
 .innerdiv {
   margin-left: 20px;
+}
+
+.article-meta-details {
+  border-top: 1px solid #eaeaea;
+  margin-top: 15px;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size:1.5em;
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
