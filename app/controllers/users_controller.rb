@@ -46,7 +46,7 @@ class UsersController < ApplicationController
   end
 
   def likes
-    current_user.like!(@user)
+    @user.like!(current_user)
     redirect_to :back, notice: "Liked this profile successfully!"
   end
 
