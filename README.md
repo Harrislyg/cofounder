@@ -1,24 +1,7 @@
-# README
+# FOUNDIFY
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a mvp web app for budding entrepreneurs to find the potential cofounders and form a formidable start-up team
 
-Things you may want to cover:
+Heroku website:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* http://foundify.herokuapp.com/
